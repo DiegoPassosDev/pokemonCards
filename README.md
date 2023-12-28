@@ -24,7 +24,8 @@ JQuery
 
 **Axios**
 ```
-  Axios é uma biblioteca JavaScript muito popular que é usada para fazer solicitações HTTP a partir do navegador e do Node.js. Ela oferece uma API fácil de usar para fazer solicitações GET, POST e outros tipos de solicitações HTTP. No contexto deste projeto, o Axios é usado para fazer solicitações à API do PokeAPI.co e recuperar dados sobre Pokémons.
+  Axios é uma biblioteca JavaScript muito popular que é usada para fazer solicitações HTTP a partir do navegador e do Node.js. Ela oferece uma API fácil de usar para fazer solicitações GET, POST e outros tipos de solicitações HTTP. No contexto deste projeto, o Axios é usado para fazer
+solicitações à API do PokeAPI.co e recuperar dados sobre Pokémons.
 ```
 
 **JQuery**
