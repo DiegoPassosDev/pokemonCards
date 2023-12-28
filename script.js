@@ -1,8 +1,13 @@
 function getpoke() {
+    document.getElementById('loader').style.display = 'block';
+    $(".pokemon_error").remove();
+    $(".card").remove();
+    $(".card-moves").remove();
     const pokemon = $("#pokemonInput").val();
    
     axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemon.toLowerCase()}`).then(result => {
        
+        document.getElementById('loader').style.display = 'none';
         $(".pokemon_error").remove();
         $(".card").remove();
         $(".card-moves").remove();
@@ -33,18 +38,21 @@ function getpoke() {
             "display": "block"
            });
         });
-
-        // Limpa o campo de entrada após a pesquisa
+        
         $("#pokemonInput").val('');
         $("#pokemonInput").focus();
 
     }).catch(error => {
         
+        document.getElementById('loader').style.display = 'none';
         if (error.response) {
+            $("#pokemonInput").val('');
+            $("#pokemonInput").focus();
             $(".pokemon_error").remove();
             $(".card").remove();
             $(".card-moves").remove();
             $("body").append(`<h1 class="pokemon_error">Pokemon não encontrado.</h1>`);
+            
         }
     })
 }
