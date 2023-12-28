@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    background-image: url('./img/fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+    color: #fff;
+    height: fit-content;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+#form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#pokemonInput {
+    width: 300px;
+    height: 40px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+#btnPesquisar {
+    width: 100px;
+    height: 40px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.card {
+    width: 280px;
+    height: 300px;
+    background-color: #fff;
+    margin-top: 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    text-align: left;
+    margin-top: 12%;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.card img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-container {
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin-bottom: 2px;
+}
+
+body .pokemon_error {
+    color: #fff;    
+    position: fixed;
+    margin-top: 11%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+.card-moves {
+    display: none;
+    overflow: auto;
+    position: relative;
+    left: 55%;
+    height: 80%;
+    color: white;
+    margin-top: 5%;
+    width: 20%;
+}
+
+body,
+html>.card-moves {
+    display: flex;
+}
+
+.movimentos {
+    cursor: pointer;
+}
